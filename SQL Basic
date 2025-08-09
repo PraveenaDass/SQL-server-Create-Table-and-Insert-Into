@@ -1,0 +1,25 @@
+ --Creating Designer Info table 
+CREATE TABLE DESIGNERINFO
+(DESIGNER_ID INT,
+FIRSTNAME VARCHAR(50),
+LASTNAME VARCHAR(50),
+AGE INT,
+GENDER VARCHAR(50)
+)
+
+-- checking if the table has been created 
+SELECT * FROM DESIGNERINFO 
+
+-- Checking if the table exist 
+-- INFORMATIONAL_SCHEMA Pulls data From a special system view that contains metadata about all tables in the database.
+SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME ='DESIGNERINFO'
+
+-- Creating designers salary table 
+CREATE TABLE DESIGNERS_SALARY
+(DESIGNER_ID INT,
+DESIGNATION VARCHAR(50),
+SALARY INT)
+
+-- Checking if the table exist 
+SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DESIGNER_SALARY'
+
